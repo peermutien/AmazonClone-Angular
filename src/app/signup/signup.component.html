@@ -1,0 +1,65 @@
+<br><br><br>
+<h1>User Profile</h1>
+<div class="container">
+
+    <!--Name Input-->
+    
+    <form class="well form-horizontal" [formGroup]="registrationForm"  (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label><b>Name:</b></label>
+        <input formControlName="custName" type="text" name="custName"  class="form-control" [(ngModel)]="customer.custName">
+          <span *ngIf="custName && custName.invalid && custName.touched" > Name Required !! </span>
+      </div>
+      <br>
+  
+        <!-- Email Input-->
+      <div class="form-group">
+        <label><b>Email:</b></label>
+        <input formControlName="custEmail" type="email" name="custEmail" class="form-control" [(ngModel)]="customer.custEmail">
+        <span *ngIf="custEmail && custEmail.invalid && custEmail.touched" > Email Required !! </span>
+      </div>
+      <br>
+
+       <!-- Age Input-->
+       <div class="form-group"> 
+        <label><b>Age:</b></label>
+        <input formControlName="custAge" type="text" name="custAge" class="form-control" [(ngModel)]="customer.custAge">
+        <span *ngIf="custAge && custAge.invalid && custAge.touched" > Age Required !! </span>
+      </div>
+      <br>
+
+        <!-- Phone Number Input-->
+        <div class="form-group">
+            <label><b>Phone Number:</b></label>
+            <input formControlName="custPhoneNo" type="text" name="custPhoneNo" class="form-control"  [(ngModel)]="customer.custPhoneNo" >
+            <span *ngIf="custPhoneNo && custPhoneNo.invalid && custPhoneNo.touched" > Phone Number Required !! </span>
+          </div>
+          <br>
+
+           <!-- Gender Input-->
+        <div class="form-group">
+            <label><b>Gender:</b></label>
+            <input formControlName="custGender" type="text" name="custGender" class="form-control" [(ngModel)]="customer.custGender">
+            <span *ngIf="custGender && custGender.invalid && custGender.touched" > Gender Required !! </span>
+          </div>
+          <br>
+
+              <!-- Address Input-->
+        <div class="form-group">
+            <label><b>Address:</b></label>
+            <input formControlName="custAddress" type="text" name="custAddress" class="form-control" [(ngModel)]="customer.custAddress">
+            <span *ngIf="custAddress && custAddress.invalid && custAddress.touched" > Address Required !! </span>
+          </div>
+
+<br><br>
+          <!--REGISTER BUTTON-->
+    <button [disabled]='!registrationForm.valid' class="btn btn-primary" type="submit" (click)="addCustomer()"> Register</button>
+      <!-- <button (click)="loadApiData()" class="btn btn-secondary ml-3" type="button"> Load API Data</button>
+     -->
+    
+    </form>
+  
+    <!-- {{registrationForm.value | json}} -->
+  
+  
+  </div>

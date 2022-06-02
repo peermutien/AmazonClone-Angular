@@ -1,0 +1,24 @@
+<br><br>
+<div class="container">
+    <br>
+    <h2 style="color:crimson" > Cart:</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                 <th style="color:crimson">Product Name</th>
+                <th style="color:crimson" >Price</th>
+                <th style="color:crimson">Rating</th>
+                <th style="color:crimson">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr >
+                <td>{{productName}}  </td>
+                <td>{{productPrice}}</td>
+                <td>{{productRating}}</td>
+                <td>{{productDescription}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="appButton" type="submit" (click)="pay()">Pay </button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

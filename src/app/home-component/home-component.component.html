@@ -1,0 +1,34 @@
+<br><br>
+<div class="background">
+<img src="assets/img/a1.jpg" alt="amazon backgorund" width="70%" height=715px >
+</div>
+
+<div class="register">
+
+       
+
+    <h1 class="login"><i>Login</i></h1>
+
+  
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <input class="inputBox" type="text" placeholder="Enter Username" formControlName="userName"  name="userName" [(ngModel)]="login.userName"   />
+    <span *ngIf="userName && userName.invalid && userName.touched" > User name Required !! </span>
+
+  
+
+    <input class="inputBox" type="password" placeholder="Enter Password" formControlName="passWord"  name="passWord" [(ngModel)]="login.passWord" >
+    <span *ngIf="passWord && passWord.invalid && passWord.touched" > Password Required !! </span>
+
+    <button class="appButton" (click)="addUser()" type="submit">Login</button>  <!-- Token Generation-->
+    <button class="appButton1" (click)="regUser()"  type="submit">Register</button> <!-- Registration-->
+    <button class="appButton2" (click)="goToProfile()" type="submit">Profile</button>
+  </form>
+ 
+  <!-- {{registrationForm.value | json}} -->
+  
+</div>
+
+
+
+  
+

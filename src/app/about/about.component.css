@@ -1,0 +1,19 @@
+.size{
+    color:black;
+    font-size:  80;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:  justify;
+    
+}
+.img{
+    margin-left: 180px;
+  
+}
+
+.paragraph{
+  
+    margin-left: 180px;
+    width: 1260px;
+    height: 400px;
+    font-size: 25px;
+}

@@ -1,0 +1,49 @@
+<br><br>
+<div class="container">
+    <br>
+    <h2 style="color:crimson" > Products Available:</h2>
+   
+   
+    <table class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                 <th style="color:crimson"><i>Product Name</i></th>
+                <th style="color:crimson" ><i>Price</i></th>
+                <th style="color:crimson"><i>Rating</i></th>
+                <th style="color:crimson"><i>Description</i></th>
+               
+            </tr>
+        </thead>
+        <tbody>
+        
+                <tr *ngFor="let products of product" class="rdiv">
+                <td style="font-size: 30px; font-family:Georgia,serif">{{products.prodName}}  </td>
+                <td style="color:Green"><b>{{products.prodPrice | currency:'INR'}}</b></td>
+                <td style="color: Green"><b>{{products.prodRating}}</b></td>
+                <td><i>{{products.prodDescription}}</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="appButton" (click)="goToCart(products)" type="submit">Add to Cart </button></td>
+                <img src="assets/img/products.webp" alt="amazon"  margin-right="10px"  height= "80px" width= "100px" padding = "20px">
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+
+
+<!-- <div class="card" style="width: 10rem;" >
+    <img src="assets/img/iphone.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Iphone</h5>
+      <p class="card-text">      
+        
+        <tr *ngFor="let products of product">
+        {{products[0].prodName}}
+      {{products.prodPrice}}
+    {{products.prodRating}}
+        <td>{{products.prodDescription}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="appButton" (click)="goToCart(products)" type="submit">Add to Cart </button></td>
+       
+    </tr></p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> -->

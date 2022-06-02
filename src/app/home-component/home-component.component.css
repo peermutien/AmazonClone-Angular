@@ -1,0 +1,113 @@
+.register{
+
+    margin-left:78% ;
+    margin-top: -520px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+   .login{
+       text-align: left;
+       margin-left: 28px;
+       font-size: 60px;
+       margin-top: -9px;
+
+   }
+
+   .background{
+     margin-top: 0px;
+     
+   }
+  
+  .inputBox{
+  
+    display:block;
+  
+    margin:25px;
+  
+    padding:20px;
+  
+    width: 300px;
+  
+    border:3px solid crimson;
+    border-radius: 50px;
+    box-shadow: 80px;
+    font-size: 15px;
+   
+  
+  }
+  
+  span{
+    color:red;
+}
+  
+  
+  .appButton{
+  
+    margin:25px;
+  
+    padding:10px ;
+  
+    width:100px;
+  
+    background-color: crimson;
+    color:azure;
+    border: 1px solid;
+  
+    cursor:pointer;
+    margin-left: 5%;
+    border-radius: 50px;
+  
+
+  }
+
+  .appButton1{
+     margin:0px;
+  
+    padding:10px ;
+  
+    width:100px; 
+  
+    background-color: crimson;
+    color:azure;
+    border: 1px solid;
+  
+    cursor:pointer;
+    margin-left: -20px;
+    border-radius: 50px;   
+    
+  }
+  .appButton2{
+    margin:0px;
+  
+    padding:10px ;
+  
+    width:100px; 
+  
+    background-color: crimson;
+    color:azure;
+    border: 1px solid;
+  
+    cursor:pointer;
+    margin-right: 10px;
+    border-radius: 50px;  
+
+  }
+  .image1
+{
+    padding:0px;
+    left: 0;
+     margin-left:0px;
+     margin-right:0px;
+     margin-bottom: 10px;
+}
+
+.bgimage{
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+
+  
